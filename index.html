@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Resin Art Studio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <h1>Resin Studio</h1>
+  <nav>
+    <a href="#gallery">Gallery</a>
+    <a href="#pricing">Pricing</a>
+    <a href="#order">Order</a>
+  </nav>
+</header>
+
+<section class="hero fade">
+  <div class="overlay"></div>
+  <div class="hero-content">
+    <h2>Premium Handmade Resin Art</h2>
+    <p>Unique custom pieces crafted beautifully</p>
+    <a href="#order" class="btn">Order Now</a>
+  </div>
+</section>
+
+<section id="gallery" class="section fade">
+  <h2>Our Collection</h2>
+  <div class="grid">
+    <img src="./images/img1.jpg" class="hover">
+    <img src="./images/img2.jpg" class="hover">
+    <img src="./images/img3.jpg" class="hover">
+    <img src="./images/img4.jpg" class="hover">
+    <img src="./images/img5.jpg" class="hover">
+    <img src="./images/img6.jpg" class="hover">
+    <img src="./images/img7.jpg" class="hover">
+    <img src="./images/img8.jpg" class="hover">
+    <img src="./images/img9.jpg" class="hover">
+    <img src="./images/img10.jpg" class="hover">
+    <img src="./images/img11.jpg" class="hover">
+  </div>
+</section>
+
+<section id="pricing" class="section fade">
+  <h2>Pricing</h2>
+  <div class="price-box">
+    <div>Keychains<br><span>₹199–₹399</span></div>
+    <div>Frames<br><span>₹599–₹1499</span></div>
+    <div>Custom Gifts<br><span>₹999+</span></div>
+  </div>
+</section>
+
+<section id="order" class="section fade">
+  <h2>Place Your Order</h2>
+  <form onsubmit="sendWhatsApp(); return false;">
+    <input id="name" placeholder="Your Name" required>
+    <textarea id="idea" placeholder="Describe your idea" required></textarea>
+    <input id="budget" placeholder="Budget (optional)">
+    <button class="btn">Order on WhatsApp</button>
+  </form>
+</section>
+
+<footer>
+  © 2026 Resin Studio | Handmade with ❤️
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
+

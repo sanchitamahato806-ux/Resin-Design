@@ -1,0 +1,150 @@
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Poppins;background:#0d0d0f;color:#fff;scroll-behavior:smooth}
+
+/* HEADER */
+header{
+display:flex;
+justify-content:space-between;
+padding:15px 25px;
+background:rgba(0,0,0,0.6);
+backdrop-filter:blur(10px);
+position:sticky;
+top:0;
+}
+
+nav a{
+margin:0 10px;
+color:#ccc;
+text-decoration:none;
+transition:0.3s;
+}
+nav a:hover{color:#fff}
+
+/* HERO */
+.hero{
+height:90vh;
+background:url('./images/img1.jpg') center/cover;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+position:relative;
+}
+
+.overlay{
+position:absolute;
+inset:0;
+background:rgba(0,0,0,0.65);
+}
+
+.hero-content{
+position:relative;
+z-index:2;
+animation:fadeIn 1.5s ease;
+}
+
+.hero h2{font-size:40px}
+.hero p{color:#ccc;margin:15px 0}
+
+/* BUTTON */
+.btn{
+background:#ff4d6d;
+padding:12px 25px;
+border-radius:30px;
+color:#fff;
+text-decoration:none;
+border:none;
+cursor:pointer;
+transition:0.3s;
+}
+.btn:hover{
+transform:scale(1.05);
+background:#ff1e4d;
+}
+
+/* SECTION */
+.section{
+padding:60px 20px;
+text-align:center;
+}
+
+/* GRID */
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(160px,1fr));
+gap:12px;
+}
+
+.grid img{
+width:100%;
+height:180px;
+object-fit:cover;
+border-radius:12px;
+transition:0.4s;
+}
+
+/* HOVER EFFECT */
+.hover:hover{
+transform:scale(1.1) rotate(1deg);
+}
+
+/* PRICING */
+.price-box{
+display:flex;
+justify-content:center;
+gap:15px;
+flex-wrap:wrap;
+}
+
+.price-box div{
+background:#1a1a1d;
+padding:15px;
+border-radius:12px;
+transition:0.3s;
+}
+.price-box div:hover{
+transform:translateY(-5px);
+}
+
+/* FORM */
+form{
+display:flex;
+flex-direction:column;
+gap:10px;
+max-width:400px;
+margin:auto;
+}
+
+input,textarea{
+padding:12px;
+border:none;
+border-radius:8px;
+background:#1c1c1f;
+color:#fff;
+}
+
+/* FADE ON SCROLL */
+.fade{
+opacity:0;
+transform:translateY(40px);
+transition:all 0.8s ease;
+}
+
+.fade.show{
+opacity:1;
+transform:translateY(0);
+}
+
+/* KEYFRAME */
+@keyframes fadeIn{
+from{opacity:0; transform:translateY(20px);}
+to{opacity:1; transform:translateY(0);}
+}
+
+/* FOOTER */
+footer{
+text-align:center;
+padding:20px;
+background:#000;
+color:#aaa;
+}
